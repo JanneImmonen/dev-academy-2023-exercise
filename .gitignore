@@ -1,0 +1,9 @@
+# .gitignore
+
+# Ignore the .env file
+backend/.env
+
+# Ignore node_modules folders
+node_modules/
+
+# Other files or folders to ignore (if needed)
