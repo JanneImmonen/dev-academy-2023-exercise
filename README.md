@@ -50,3 +50,25 @@ The main files and folders in this project are:
 CSS files for styling the frontend are also included.
 
 ## Application Components
+
+### Backend
+
+Express server for handling API requests
+PostgreSQL database for storing station and journey data
+importData.ts script for importing station and journey data into the database
+
+### Frontend
+
+React application with the following components:
+StationList: Displays a list of stations
+JourneyList: Displays a list of journeys based on a specific station ID
+Search: Allows users to search for journeys by station ID
+StationDetails: Displays detailed information about a station
+
+## Authors
+
+[Janne Immonen] - [https://github.com/JanneImmonen]
+
+## License
+
+This project is licensed under the [https://opensource.org/license/mit/] License - see the [LICENSE.md](LICENSE.md) file for details
