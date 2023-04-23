@@ -67,7 +67,7 @@ StationDetails: Displays detailed information about a station
 
 ## Authors
 
-[Janne Immonen] - [https://github.com/JanneImmonen]
+[Janne Immonen][https://github.com/JanneImmonen]
 
 ## License
 
