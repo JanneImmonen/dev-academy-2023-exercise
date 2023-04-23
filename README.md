@@ -1,64 +1,52 @@
-# Helsinki City Bike App (Dev Academy Pre-Assignment)
+# Dev Academy 2023 Exercise
 
-This is a web application that displays data from journeys made with city bikes in the Helsinki Capital area. It is also the pre-assignment for Solita Dev Academy Finland 2023.
+This is a project submission for Dev Academy 2023. The application is a web app that displays information about bike sharing stations and their journey data.
 
-## Features
+## Technologies
 
-- Import data from CSV files into a database
-- Validate data before importing
-- Exclude journeys that last less than 10 seconds or cover distances shorter than 10 meters
-- Display a list of journeys, showing departure and return stations, distance, and duration
-- List all bike stations
-- Show detailed information for a single bike station
+- Backend: Node.js, Express, PostgreSQL, TypeScript
+- Frontend: React
+- Source Code: https://github.com/JanneImmonen/dev-academy-2023-exercise
 
-## Technologies Used
+## Setup
 
-- Backend: [Your backend technology choice]
-- Frontend: [Your frontend technology choice]
-- Database: [Your database technology choice]
+### Backend
 
-## Getting Started
+1. Run the following command to install the required dependencies: npm install
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+2. Set up your environment variables in a `.env` file in the root folder of your project. You can use the `.env.example` as a reference.
 
-### Prerequisites
+3. Start the backend server by running: npm start
 
-[List any prerequisites or dependencies needed to run your project]
+If you encounter any issues, you can also use this command: powershell -ExecutionPolicy Bypass -Command "ts-node src/index.ts"
 
-### Installation
+### Frontend
 
-1. Clone the repository:
+1. Change to the frontend folder and install the required dependencies:
 
-git clone https://github.com/JanneImmonen/dev-academy-2023-exercise.git
+cd frontend
+npm install
 
+2. Set up your environment variables in a `.env` file in the frontend folder. You can use the `.env.example` as a reference.
 
-2. [Add any additional installation steps specific to your project]
+3. Start the frontend server by running: npm start
 
-### Running the Application
+The frontend will be running at `localhost:3001`.
 
-[Provide step-by-step instructions on how to run your application]
+## Tests
 
-### Running Tests
+The project includes tests for both the Journey Controller and Station Controller using `supertest`. To run the tests, simply run the following command in the root folder of your project: npm test
 
-[Explain how to run tests for your application]
+## Repository Structure
 
-## API Endpoints
+The main files and folders in this project are:
 
-[If applicable, list and describe the API endpoints your application provides]
+- `backend/src/`: The source code for the backend server
+- `frontend/src/`: The source code for the frontend React application
+- `backend/src/importData.ts`: A script to import station and journey data into the database
+- `frontend/src/App.tsx`: The main entry point for the React application, which includes routing and component rendering
+- `frontend/src/components/`: Contains the various React components used in the application
 
-## Future Improvements
+CSS files for styling the frontend are also included.
 
-- Add pagination, ordering, searching, and filtering features for journey and station lists
-- Display station location on a map and calculate average journey distances for each station
-- Show top 5 most popular departure and return stations for each station
-- Create UI for adding journeys or bicycle stations
-- Implement E2E tests
-- Run the backend in Docker or Cloud
-
-## Authors
-
-- [Your Name] - [Your GitHub profile link]
-
-## License
-
-This project is licensed under the [Your License Choice] License - see the [LICENSE.md](LICENSE.md) file for details
+## Application Components
